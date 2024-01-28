@@ -13,21 +13,27 @@
         android:theme="@style/Theme.AndroidPractice"
         tools:targetApi="31">
         <activity
+            android:name=".Ex13Activity"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ex12Activity"
+            android:exported="true" >
+
+        </activity>
+        <activity
             android:name=".Ex11AgainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-    </activity>
-    <activity
-
+        </activity>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-    </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
